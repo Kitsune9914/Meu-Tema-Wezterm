@@ -25,5 +25,5 @@ Windows
 
 ### Imagens do Tema:
 
-![Y0504_184940](https://github.com/Kitsune9914/Meu-Tema-Wezterm/assets/154748391/ee311291-178f-4df0-8fb0-0b36b09f6f63)
+![image](https://i.imgur.com/V7iUDoa.png)
 
