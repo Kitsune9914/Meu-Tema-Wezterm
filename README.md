@@ -19,3 +19,6 @@ Linux/MacOs
 ```
 
 Windows
+```
+%HOME%/.wezterm/
+```
