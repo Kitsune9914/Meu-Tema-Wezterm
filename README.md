@@ -4,7 +4,7 @@ Tema do Wezterm feito por mim
 ### Requisitos
 
 - Ter o Wezterm instalado 
-- Apenas a fonte JetBrains Mono
+- Ter a fonte JetBrains Mono instalada
 
 # ⚠️  Atenção
 
@@ -27,3 +27,6 @@ Windows
 
 ![image](https://i.imgur.com/V7iUDoa.png)
 
+### Com mais de um Painel:
+
+![image](https://i.imgur.com/ZIV2BKU.png)
