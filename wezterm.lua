@@ -1,6 +1,11 @@
 local wezterm = require("wezterm")
 act = wezterm.action
 
+local config = {}
+if wezterm.config_builder then
+	config = wezterm.config_builder()
+end
+
 -- Configuração Básica
 
 config.color_scheme = "Catppuccin Frappe"
