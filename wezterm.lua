@@ -1,6 +1,6 @@
 local wezterm = require("wezterm")
 act = wezterm.action
-e
+
 -- Configuração Básica
 
 config.color_scheme = "Catppuccin Frappe"
