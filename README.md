@@ -31,8 +31,6 @@ Windows
 
 ![image](https://i.imgur.com/ZIV2BKU.png)
 
-# Shell do terminal não é incluso
+### Shell do terminal não é incluso
 
 Caso queira saber é o zsh como o tema Robbyrussel
-
-teste
