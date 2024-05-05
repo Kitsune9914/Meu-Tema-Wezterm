@@ -8,14 +8,14 @@ end
 
 -- Configuração Básica
 
-config.color_scheme = "Catppuccin Frappe"
+config.color_scheme = "Tokyo Night"
 config.scrollback_lines = 3000
 config.default_workspace = "home"
 config.window_background_opacity = 0.7
 
 -- Configuração da Fonte
 
-config.font = wezterm.font("JetBrains Mono", { weight = "Bold", italic = true })
+config.font = wezterm.font("JetBrains Mono")
 
 -- Configuração das Teclas de atalho
 
@@ -39,6 +39,10 @@ config.keys = {
 
 	{ key = "v", mods = "SUPER|CTRL", action = wezterm.action.SpawnCommandInNewTab({
 		args = { "nvim" },
+	}) },
+
+	{ key = "b", mods = "SUPER|CTRL", action = wezterm.action.SpawnCommandInNewTab({
+		args = { "btop" },
 	}) },
 }
 
