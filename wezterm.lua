@@ -8,7 +8,7 @@ end
 
 -- Configuração Básica
 
-config.color_scheme = "Tokyo Night"
+config.color_scheme = "Catppuccin Frappe"
 config.scrollback_lines = 3000
 config.default_workspace = "home"
 config.window_background_opacity = 0.7
