@@ -19,8 +19,16 @@ config.font = wezterm.font("JetBrains Mono", { weight = "Bold", italic = true })
 
 -- Configuração das Teclas de atalho
 
-config.keys =
-	{ { key = "k", mods = "CTRL|SHIFT", action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }) } }
+config.keys = {
+	{ key = "w", mods = "SUPER|SHIFT", action = wezterm.action.CloseCurrentTab({ confirm = false }) },
+	{ key = "s", mods = "SUPER|SHIFT", action = wezterm.action.CloseCurrentPane({ confirm = false }) },
+	{ key = "k", mods = "SUPER", action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
+	{ key = "j", mods = "SUPER", action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }) },
+	{ key = "UpArrow", mods = "SHIFT", action = act.ActivatePaneDirection("Up") },
+	{ key = "DownArrow", mods = "SHIFT", action = act.ActivatePaneDirection("Down") },
+	{ key = "LeftArrow", mods = "SHIFT", action = act.ActivatePaneDirection("Left") },
+	{ key = "RightArrow", mods = "SHIFT", action = act.ActivatePaneDirection("Right") },
+}
 
 -- Configuração da Janela
 
