@@ -20,14 +20,26 @@ config.font = wezterm.font("JetBrains Mono", { weight = "Bold", italic = true })
 -- Configuração das Teclas de atalho
 
 config.keys = {
+
+	-- Fechar aba e/ou paneis
+
 	{ key = "w", mods = "SUPER|SHIFT", action = wezterm.action.CloseCurrentTab({ confirm = false }) },
 	{ key = "s", mods = "SUPER|SHIFT", action = wezterm.action.CloseCurrentPane({ confirm = false }) },
+
+	-- Ajuste e navegação nos paineis
+
 	{ key = "k", mods = "SUPER", action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
 	{ key = "j", mods = "SUPER", action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }) },
 	{ key = "UpArrow", mods = "SHIFT", action = act.ActivatePaneDirection("Up") },
 	{ key = "DownArrow", mods = "SHIFT", action = act.ActivatePaneDirection("Down") },
 	{ key = "LeftArrow", mods = "SHIFT", action = act.ActivatePaneDirection("Left") },
 	{ key = "RightArrow", mods = "SHIFT", action = act.ActivatePaneDirection("Right") },
+
+	-- Executar comandos em uma nova Janela
+
+	{ key = "v", mods = "SUPER|CTRL", action = wezterm.action.SpawnCommandInNewTab({
+		args = { "nvim" },
+	}) },
 }
 
 -- Configuração da Janela
