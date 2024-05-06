@@ -13,9 +13,16 @@ config.scrollback_lines = 3000
 config.default_workspace = "home"
 config.window_background_opacity = 0.7
 
+-- Escurecer Paineis inativos
+
+config.inactive_pane_hsb = {
+	saturation = 0.50,
+	brightness = 0.25,
+}
+
 -- Configuração da Fonte
 
-config.font = wezterm.font("JetBrains Mono")
+config.font = wezterm.font("JetBrains Mono", { weight = "Bold" })
 
 -- Configuração das Teclas de atalho
 
@@ -34,6 +41,13 @@ config.keys = {
 	{ key = "DownArrow", mods = "SHIFT", action = act.ActivatePaneDirection("Down") },
 	{ key = "LeftArrow", mods = "SHIFT", action = act.ActivatePaneDirection("Left") },
 	{ key = "RightArrow", mods = "SHIFT", action = act.ActivatePaneDirection("Right") },
+
+	-- Ajustes do tamanho do painel
+
+	{ key = "UpArrow", mods = "CTRL", action = act.AdjustPaneSize({ "Up", 5 }) },
+	{ key = "DownArrow", mods = "CTRL", action = act.AdjustPaneSize({ "Down", 5 }) },
+	{ key = "LeftArrow", mods = "CTRL", action = act.AdjustPaneSize({ "Left", 5 }) },
+	{ key = "RightArrow", mods = "CTRL", action = act.AdjustPaneSize({ "Right", 5 }) },
 
 	-- Executar comandos em uma nova Janela
 
