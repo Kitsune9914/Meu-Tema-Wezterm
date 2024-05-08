@@ -15,7 +15,7 @@ end
 
 -- Configuração Básica
 
-config.color_scheme = "vulcan (base16)"
+config.color_scheme = "Galaxy"
 config.scrollback_lines = 3000
 config.default_workspace = "home"
 config.window_background_opacity = 1.0
@@ -35,9 +35,10 @@ config.font = wezterm.font("JetBrains Mono", { weight = "Bold" })
 
 config.keys = {
 
-	-- Fechar aba e/ou paneis
+	-- Ações basicas
 
-	{ key = "w", mods = "SUPER|SHIFT", action = wezterm.action.CloseCurrentTab({ confirm = false }) },
+	{ key = "w", mods = "CTRL", action = wezterm.action.CloseCurrentTab({ confirm = false }) },
+	{ key = "t", mods = "CTRL", action = act.SpawnTab("CurrentPaneDomain") },
 	{ key = "s", mods = "SUPER|SHIFT", action = wezterm.action.CloseCurrentPane({ confirm = false }) },
 
 	-- Ajuste e navegação nos paineis
