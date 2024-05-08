@@ -1,3 +1,10 @@
+-- ███████╗██████╗ ██╗   ██╗████████╗███████╗██████╗ ███╗   ███╗
+-- ██╔════╝██╔══██╗██║   ██║╚══██╔══╝██╔════╝██╔══██╗████╗ ████║
+-- █████╗  ██║  ██║██║   ██║   ██║   █████╗  ██████╔╝██╔████╔██║
+-- ██╔══╝  ██║  ██║██║   ██║   ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║
+-- ███████╗██████╔╝╚██████╔╝   ██║   ███████╗██║  ██║██║ ╚═╝ ██║
+-- ╚══════╝╚═════╝  ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝
+
 local wezterm = require("wezterm")
 act = wezterm.action
 
@@ -8,10 +15,10 @@ end
 
 -- Configuração Básica
 
-config.color_scheme = "Catppuccin Frappe"
+config.color_scheme = "vulcan (base16)"
 config.scrollback_lines = 3000
 config.default_workspace = "home"
-config.window_background_opacity = 0.7
+config.window_background_opacity = 1.0
 
 -- Escurecer Paineis inativos
 
