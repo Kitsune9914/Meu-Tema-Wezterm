@@ -22,15 +22,3 @@ Windows
 ```
 %HOME%/.wezterm/
 ```
-
-### Imagens do Tema:
-
-![image](https://i.imgur.com/V7iUDoa.png)
-
-### Com mais de um Painel:
-
-![image](https://i.imgur.com/ZIV2BKU.png)
-
-# ⚠️ O Shell do terminal não é incluso
-
-Caso queira saber é o zsh como o tema Robbyrussel
