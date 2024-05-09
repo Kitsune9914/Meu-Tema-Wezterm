@@ -29,7 +29,9 @@ config.inactive_pane_hsb = {
 
 -- Configuração da Fonte
 
-config.font = wezterm.font("JetBrains Mono", { weight = "Bold" })
+config.font = wezterm.font_with_fallback({
+	{ family = "JetBrains Mono", scale = 0.9 },
+})
 
 -- Configuração das Teclas de atalho
 
