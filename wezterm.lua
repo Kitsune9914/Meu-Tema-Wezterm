@@ -57,6 +57,11 @@ config.keys = {
 	{ key = "LeftArrow", mods = "CTRL", action = act.AdjustPaneSize({ "Left", 5 }) },
 	{ key = "RightArrow", mods = "CTRL", action = act.AdjustPaneSize({ "Right", 5 }) },
 
+	-- Copiar e colar
+
+	{ key = "c", mods = "CTRL", action = wezterm.action.CopyTo("Clipboard") },
+	{ key = "v", mods = "CTRL", action = wezterm.action.PasteFrom("Clipboard") },
+
 	-- Executar comandos em uma nova Janela
 
 	{ key = "v", mods = "SUPER|CTRL", action = wezterm.action.SpawnCommandInNewTab({
@@ -73,5 +78,6 @@ config.keys = {
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
 config.window_decorations = "RESIZE"
+config.hide_tab_bar_if_only_one_tab = true
 
 return config
