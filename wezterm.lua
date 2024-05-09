@@ -15,7 +15,7 @@ end
 
 -- Configuração Básica
 
-config.color_scheme = "Galaxy"
+config.color_scheme = "Catppuccin Frappe"
 config.scrollback_lines = 3000
 config.default_workspace = "home"
 config.window_background_opacity = 1.0
@@ -29,9 +29,8 @@ config.inactive_pane_hsb = {
 
 -- Configuração da Fonte
 
-config.font = wezterm.font_with_fallback({
-	{ family = "JetBrains Mono", scale = 0.9 },
-})
+config.font = wezterm.font("JetBrains Mono", { weight = "Bold", italic = true })
+config.font_size = 10.0
 
 -- Configuração das Teclas de atalho
 
