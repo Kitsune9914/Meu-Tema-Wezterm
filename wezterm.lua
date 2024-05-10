@@ -15,7 +15,7 @@ end
 
 -- Configuração Básica
 
-config.color_scheme = "Mashup Colors (terminal.sexy)"
+config.color_scheme = "Tokyo Night"
 config.scrollback_lines = 3000
 config.default_workspace = "home"
 config.window_background_opacity = 0.7
