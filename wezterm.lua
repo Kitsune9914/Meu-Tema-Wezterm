@@ -15,10 +15,10 @@ end
 
 -- Configuração Básica
 
-config.color_scheme = "Catppuccin Frappe"
+config.color_scheme = "Vs Code Dark+ (Gogh)"
 config.scrollback_lines = 3000
 config.default_workspace = "home"
-config.window_background_opacity = 1.0
+config.window_background_opacity = 1
 
 -- Escurecer Paineis inativos
 
