@@ -15,7 +15,7 @@ end
 
 -- Configuração Básica
 
-config.color_scheme = "Whimsy"
+config.color_scheme = "Windows 95 (base16)"
 config.scrollback_lines = 3000
 config.default_workspace = "home"
 config.window_background_opacity = 0.7
