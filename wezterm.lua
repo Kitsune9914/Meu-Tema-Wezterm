@@ -15,7 +15,7 @@ end
 
 -- Configuração Básica
 
-config.color_scheme = "Vs Code Dark+ (Gogh)"
+config.color_scheme = "Whimsy"
 config.scrollback_lines = 3000
 config.default_workspace = "home"
 config.window_background_opacity = 1
