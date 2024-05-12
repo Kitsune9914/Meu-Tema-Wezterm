@@ -15,10 +15,10 @@ end
 
 -- Configuração Básica
 
-config.color_scheme = "Tokyo Night"
+config.color_scheme = "Kanagawa (Gogh)"
 config.scrollback_lines = 3000
 config.default_workspace = "home"
-config.window_background_opacity = 0.7
+config.window_background_opacity = 0.6
 
 -- Escurecer Paineis inativos
 
@@ -41,6 +41,7 @@ config.keys = {
 	{ key = "w", mods = "CTRL", action = wezterm.action.CloseCurrentTab({ confirm = false }) },
 	{ key = "t", mods = "CTRL", action = act.SpawnTab("CurrentPaneDomain") },
 	{ key = "s", mods = "SUPER|SHIFT", action = wezterm.action.CloseCurrentPane({ confirm = false }) },
+	{ key = "f", mods = "CTRL", action = wezterm.action.ToggleFullScreen },
 
 	-- Ajuste e navegação nos paineis
 
@@ -50,6 +51,12 @@ config.keys = {
 	{ key = "DownArrow", mods = "SHIFT", action = act.ActivatePaneDirection("Down") },
 	{ key = "LeftArrow", mods = "SHIFT", action = act.ActivatePaneDirection("Left") },
 	{ key = "RightArrow", mods = "SHIFT", action = act.ActivatePaneDirection("Right") },
+
+	-- Troca entre paineis
+
+	{ key = "8", mods = "CTRL", action = act.PaneSelect },
+	{ key = "9", mods = "CTRL", action = act.PaneSelect({ alphabet = "1234567890" }) },
+	{ key = "0", mods = "CTRL", action = act.PaneSelect({ mode = "SwapWithActive" }) },
 
 	-- Ajustes do tamanho do painel
 
@@ -78,7 +85,7 @@ config.keys = {
 
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
-config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
+config.window_decorations = "RESIZE"
 
 return config
