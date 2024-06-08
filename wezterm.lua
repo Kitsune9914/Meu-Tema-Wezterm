@@ -1,10 +1,3 @@
--- ███████╗██████╗ ██╗   ██╗████████╗███████╗██████╗ ███╗   ███╗
--- ██╔════╝██╔══██╗██║   ██║╚══██╔══╝██╔════╝██╔══██╗████╗ ████║
--- █████╗  ██║  ██║██║   ██║   ██║   █████╗  ██████╔╝██╔████╔██║
--- ██╔══╝  ██║  ██║██║   ██║   ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║
--- ███████╗██████╔╝╚██████╔╝   ██║   ███████╗██║  ██║██║ ╚═╝ ██║
--- ╚══════╝╚═════╝  ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝
-
 local wezterm = require("wezterm")
 act = wezterm.action
 
@@ -18,7 +11,7 @@ end
 config.color_scheme = "Kanagawa (Gogh)"
 config.scrollback_lines = 3000
 config.default_workspace = "home"
-config.window_background_opacity = 0.6
+config.window_background_opacity = 0.7
 
 -- Escurecer Paineis inativos
 
@@ -29,7 +22,7 @@ config.inactive_pane_hsb = {
 
 -- Configuração da Fonte
 
-config.font = wezterm.font("JetBrains Mono", { weight = "Bold", italic = true })
+config.font = wezterm.font("JetBrains Mono", { weight = "Bold" })
 config.font_size = 10.0
 
 -- Configuração das Teclas de atalho
@@ -40,7 +33,6 @@ config.keys = {
 
 	{ key = "w", mods = "CTRL", action = wezterm.action.CloseCurrentTab({ confirm = false }) },
 	{ key = "t", mods = "CTRL", action = act.SpawnTab("CurrentPaneDomain") },
-	{ key = "s", mods = "SUPER|SHIFT", action = wezterm.action.CloseCurrentPane({ confirm = false }) },
 	{ key = "f", mods = "CTRL", action = wezterm.action.ToggleFullScreen },
 
 	-- Ajuste e navegação nos paineis
@@ -87,5 +79,4 @@ config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
 config.hide_tab_bar_if_only_one_tab = true
 config.window_decorations = "RESIZE"
-
 return config
