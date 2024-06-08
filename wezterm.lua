@@ -1,3 +1,10 @@
+-- ███████╗██████╗ ██╗   ██╗████████╗███████╗██████╗ ███╗   ███╗
+-- ██╔════╝██╔══██╗██║   ██║╚══██╔══╝██╔════╝██╔══██╗████╗ ████║
+-- █████╗  ██║  ██║██║   ██║   ██║   █████╗  ██████╔╝██╔████╔██║
+-- ██╔══╝  ██║  ██║██║   ██║   ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║
+-- ███████╗██████╔╝╚██████╔╝   ██║   ███████╗██║  ██║██║ ╚═╝ ██║
+-- ╚══════╝╚═════╝  ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝
+
 local wezterm = require("wezterm")
 act = wezterm.action
 
@@ -62,15 +69,9 @@ config.keys = {
 	{ key = "c", mods = "CTRL", action = wezterm.action.CopyTo("Clipboard") },
 	{ key = "v", mods = "CTRL", action = wezterm.action.PasteFrom("Clipboard") },
 
-	-- Executar comandos em uma nova Janela
+	-- Executar comandos em outra janela
 
-	{ key = "v", mods = "SUPER|CTRL", action = wezterm.action.SpawnCommandInNewTab({
-		args = { "nvim" },
-	}) },
-
-	{ key = "b", mods = "SUPER|CTRL", action = wezterm.action.SpawnCommandInNewTab({
-		args = { "btop" },
-	}) },
+	{ key = "1", mods = "SUPER|CTRL", action = wezterm.action.SpawnCommandInNewTab({ args = { "lazygit" } }) },
 }
 
 -- Configuração da Janela
