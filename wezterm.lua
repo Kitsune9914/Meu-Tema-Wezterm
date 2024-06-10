@@ -68,10 +68,6 @@ config.keys = {
 
 	{ key = "c", mods = "CTRL", action = wezterm.action.CopyTo("Clipboard") },
 	{ key = "v", mods = "CTRL", action = wezterm.action.PasteFrom("Clipboard") },
-
-	-- Executar comandos em outra janela
-
-	{ key = "1", mods = "SUPER|CTRL", action = wezterm.action.SpawnCommandInNewTab({ args = { "lazygit" } }) },
 }
 
 -- Configuração da Janela
